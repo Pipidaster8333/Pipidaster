@@ -1,36 +1,71 @@
-name: GitHub Pages
+# Where things are
+source              : .
+destination         : ./_site
+collections_dir     : .
+plugins_dir         : _plugins # takes an array of strings and loads plugins in that order
+layouts_dir         : _layouts
+data_dir            : _data
+includes_dir        : _includes
+sass:
+  sass_dir: _sass
+collections:
+  posts:
+    output          : true
 
-on:
-  push:
-    branches:
-      - main
+# Handling Reading
+safe                : false
+include             : [".htaccess"]
+exclude             : ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
+keep_files          : [".git", ".svn"]
+encoding            : "utf-8"
+markdown_ext        : "markdown,mkdown,mkdn,mkd,md"
+strict_front_matter : false
 
-jobs:
-  deploy:
-    runs-on: ubuntu-22.04
-    permissions:
-      contents: write
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
-    steps:
-      - uses: actions/checkout@v3
+# Filtering Content
+show_drafts         : null
+limit_posts         : 0
+future              : false
+unpublished         : false
 
-      - name: Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: latest
+# Plugins
+whitelist           : []
+plugins             : []
 
-      - name: Install Dependencies
-        run: |
-          npm i
+# Conversion
+markdown            : kramdown
+highlighter         : rouge
+lsi                 : false
+excerpt_separator   : "\n\n"
+incremental         : false
 
-      - name: Build
-        run: |
-          npm run build-production
+# Serving
+detach              : false
+port                : 4000
+host                : 127.0.0.1
+baseurl             : "" # does not include hostname
+show_dir_listing    : false
 
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4.3.4
-        with:
-          BRANCH: gh-pages
-          FOLDER: docs
-          single-commit: true
+# Outputting
+permalink           : date
+paginate_path       : /page:num
+timezone            : null
+
+quiet               : false
+verbose             : false
+defaults            : []
+
+liquid:
+  error_mode        : warn
+  strict_filters    : false
+  strict_variables  : false
+
+# Markdown Processors
+kramdown:
+  auto_ids          : true
+  entity_output     : as_char
+  toc_levels        : [1, 2, 3, 4, 5, 6]
+  smart_quotes      : lsquo,rsquo,ldquo,rdquo
+  input             : GFM
+  hard_wrap         : false
+  footnote_nr       : 1
+  show_warnings     : false
