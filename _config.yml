@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Математика
+title: Мир математики
 email: matvejrykov741@gmail.com
 description: >- # Это моя книга по математике
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -50,3 +50,4 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+usemathjax: true
