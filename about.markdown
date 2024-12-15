@@ -1,16 +1,19 @@
 ---
 layout: page
-title: About
+title: Информация
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Ну короче типо я хотел сделать книжечку электронную по математике. 
 
-You can find the source code for Minima at GitHub:
+Вот сайт Jekyll:
+[jekyllrb.com](https://jekyllrb.com/)
+
+Вот исходный код для темы minima:
 [jekyll][jekyll-organization] /
 [minima](https://github.com/jekyll/minima)
 
-You can find the source code for Jekyll at GitHub:
+А вот исходный код Jekyll на гитхабе:
 [jekyll][jekyll-organization] /
 [jekyll](https://github.com/jekyll/jekyll)
 
