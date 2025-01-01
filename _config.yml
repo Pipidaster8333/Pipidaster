@@ -30,6 +30,7 @@ github_username:  pipidaster8333
 remote_theme: jekyll-theme-moonwalk
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default.
