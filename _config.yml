@@ -21,13 +21,13 @@
 title: Мир математики
 email: matvejrykov741@gmail.com
 description: >- # Это моя книга по математике
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: ""
 url: "https://pipidaster8333.github.io"
 twitter_username: pipidaster8333
 github_username:  pipidaster8333
 
 # Build settings
-theme: Moonwalk
+theme: jekyll-theme-Moonwalk
 plugins:
   - jekyll-feed
 
