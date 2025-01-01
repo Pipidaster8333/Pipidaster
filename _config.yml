@@ -27,7 +27,7 @@ twitter_username: pipidaster8333
 github_username:  pipidaster8333
 
 # Build settings
-theme: moonwalk
+theme: Moonwalk
 plugins:
   - jekyll-feed
 
