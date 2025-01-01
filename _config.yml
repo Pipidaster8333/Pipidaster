@@ -53,3 +53,5 @@ plugins:
 markdown: kramdown
 kramdown:
     math_engine: mathjax
+usemathjax: true
+render_with_liquid: false    
