@@ -27,7 +27,7 @@ twitter_username: pipidaster8333
 github_username:  pipidaster8333
 
 # Build settings
-remote_theme: aterenin/minima-reboot
+remote_theme: abhinavs/moonwalk
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
