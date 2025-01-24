@@ -17,7 +17,6 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 title: Мир математики
 email: matvejrykov741@gmail.com
 description: >- # Это моя книга по математике
@@ -27,11 +26,10 @@ twitter_username: pipidaster8333
 github_username:  pipidaster8333
 
 # Build settings
-remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+remote_theme: abhinavs/moonwalk
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
-  - jekyll-include-cache
 
 # Exclude from processing.
 # The following items will not be processed, by default.
