@@ -18,13 +18,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Мир математики
+author: pipidaster8333
 email: matvejrykov741@gmail.com
 description: >- # Это моя книга по математике
 baseurl: ""
 url: "https://pipidaster8333.github.io"
-twitter_username: pipidaster8333
-github_username:  pipidaster8333
-
 # Build settings
 remote_theme: abhinavs/moonwalk
 plugins:
@@ -33,12 +31,12 @@ plugins:
 theme_config:
   appearance: "dark" # can be "light", "dark" or "auto"
   appearance_toggle: true # if appearance can be switched by user
-  back_home_text: "home.." # customize text for homepage link in post layout
-  date_format: "%Y-%m-%d" # customize how date is formatted
+  back_home_text: "Назад" # customize text for homepage link in post layout
+  date_format: "%d-%m-%Y" # customize how date is formatted
   show_description: true # show blog description
   show_navbar: true # show horizontal navbar
   show_footer: true # show footer links in home page,add in _data/home.yml
-  show_copyright: true # show copyright notice in footer
+  show_copyright: false # show copyright notice in footer
   # following keys are using to create home layout
   show_projects: true # show projects as cards, add in _data/home.yml
   show_blog: true # show blog posts added in _posts
@@ -69,5 +67,4 @@ theme_config:
 markdown: kramdown
 kramdown:
     math_engine: mathjax
-usemathjax: true
 render_with_liquid: false    
